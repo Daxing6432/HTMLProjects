@@ -1,0 +1,54 @@
+body{
+    background-color: #fea348;
+    color: #007984;
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    font-size: 16px;
+  }
+  
+  h1, p{
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  
+  label{
+    width: 100%;
+    margin: 0;
+  }
+  
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  input, textarea, select{
+    margin: 1px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0px 10px 0 0;
+    display: inline-block; 
+    vertical-align: middle; 
+  }
+  
+  fieldset label{
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  input, textarea, select{
+    color: white;
+    background-color: #263284;
+    border: 1px solid #0a0a23;
+  }
+  fieldset{
+    border: none;
+    border-bottom: 3px solid #fd7e00;
+  }
