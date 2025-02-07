@@ -32,6 +32,36 @@ function operate(){
         return
     }
 }
+
+function cal(){
+    if(n1.textContent === ""){return}
+    else{
+        x = parseFloat(n1.textContent);
+        y = parseFloat(n3.textContent);
+        let op = n2.textContent;
+        n1.innerHTML = "";
+        n2.innerHTML = "";
+
+        switch(op){
+            case "-":
+                n3.innerHTML = x - y;
+                break;
+            case "+":
+                n3.innerHTML = x + y;
+                break;
+            case ":":
+                if(y === 0) {
+                    n3.innerHTML = "Error";
+                } else {
+                    n3.innerHTML = x / y;
+                }
+                break;
+            case "*":
+                n3.innerHTML = x * y;
+                break;
+        }
+    }
+}
 function clearScreen(){
     n1.innerHTML="";
     n2.innerHTML="";
@@ -49,4 +79,4 @@ operator.forEach((button) => {
 
 clear.addEventListener("click", clearScreen);
 
-equals.addEventListener("click", calculate);
+equals.addEventListener("click", cal);
