@@ -71,6 +71,6 @@ html, body{
 .operator:hover,
 .clear:hover,
 .equals:hover{
-    background-color: white;
+    background: rgb(255, 255, 255);
     color: black
 }
